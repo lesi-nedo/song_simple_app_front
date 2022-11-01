@@ -1,0 +1,7 @@
+<h2>Songs</h2>
+<div class="song-menu">
+
+  <a *ngFor="let song of songs"
+      routerLink="/detail/{{song.id}}" class="detS" ><i class="fa fa-music" aria-hidden="true"></i> {{song.title}}</a>
+</div>
+

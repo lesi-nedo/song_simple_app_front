@@ -1,0 +1,18 @@
+<div *ngIf="!searchById">
+    <form [formGroup]="addUpdateForm" (ngSubmit)="onSubmit()">
+      <label for="title">Title: </label>
+      <input id="title" type="text" formControlName="title" required>
+
+      <label for="author">Author: </label>
+      <input id="author" type="text" formControlName="author" required>
+
+      <label for="year_pub">Year Of Publication: </label>
+      <input id="year_pub" type="date" formControlName="year_pub" required>
+
+      <label for="language">Language: </label>
+      <input id="language" type="text" formControlName="language" required>
+      <button type="submit" [disabled]="!addUpdateForm.valid || isSaving">Submit</button>
+    </form>
+
+</div>
+<div *ngIf="searchById"><app-search></app-search></div>

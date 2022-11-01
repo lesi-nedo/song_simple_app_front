@@ -1,0 +1,17 @@
+<div *ngIf="song">
+  <h2>Details</h2>
+  <div class="typeCont">
+    <div class="type"><p>Title</p></div>
+    <div class="type"><p>Author</p></div>
+    <div class="type"><p>Year Of Publication</p></div>
+    <div class="type"><p>Language</p></div>
+    <div class="info"><p>{{song.title}}</p></div>
+    <div class="info"><p>{{song.author}}</p></div>
+    <div class="info"><p>{{song.year_pub | date}}</p></div>
+    <div class="info"><p>{{song.language}}</p></div>
+  </div>
+
+  <button class="button-1" role="button" (click)="update(song.id!)">Update</button>
+  <button class="button-1" role="button" (click)="delete(song.id!)">Delete</button>
+
+</div>

@@ -1,0 +1,12 @@
+<h2>All Songs</h2>
+
+
+<ul class="songs">
+    <li *ngFor="let hero of songs">
+        <a class="detail" routerLink="/detail/{{hero.id}}">
+            <span class="badge">{{hero.id}}</span> {{hero.title}}
+        </a>
+        <span class="update"><a routerLink="/{{hero.id}}/edit"><i class="fa fa-refresh" aria-hidden="true"></i></a></span>
+        <span class="delete"><a routerLink="/{{hero.id}}/delete"><i class="fa fa-trash" aria-hidden="true"></i></a></span>
+    </li>
+</ul>

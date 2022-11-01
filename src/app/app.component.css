@@ -1,0 +1,26 @@
+.menu {
+  text-decoration: none;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding: 1em;
+  margin-right: 50% auto;
+}
+
+.addS {
+  left: 20%;
+
+}
+
+.showAll {
+  left: 40%;
+}
+
+.upd {
+  left: 60%;
+}
+
+.del {
+  left: 80%;
+}
+

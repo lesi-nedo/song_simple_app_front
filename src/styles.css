@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "CalibriBold";
+  src: url("./assets/fonts/CalibreBold.otf") format ("opentype");
+
+  }
+
+  body {
+    background-color: rgba(255, 245, 225, 0.4);
+  }
