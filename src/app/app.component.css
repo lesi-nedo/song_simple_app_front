@@ -5,6 +5,16 @@
   bottom: 0;
   padding: 1em;
   margin-right: 50% auto;
+  font-size: 2rem;
+  color: black;
+}
+
+a:active{
+  color: red;
+}
+
+a:hover{
+  color:blue;
 }
 
 .addS {

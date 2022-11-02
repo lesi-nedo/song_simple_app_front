@@ -1,8 +1,9 @@
-.songs {
+.songs, h2 {
   margin: 0 0 0em 1.5em;
   list-style-type: "\1F493";
   padding: 0;
   width: 15em;
+  margin-left: 43%;
 }
 
 .songs li {

@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'songs-app';
 
-  some() {
-    const logProp = Object.getOwnPropertyNames(LoggingLevel);
-    logProp.forEach(x => console.log(x.match(/^[A-Z].+/g)));
+  onClick(parameter: HTMLElement, others: HTMLElement[]){
+    others.forEach(elem => elem.style.color="black");
+    parameter.style.color="blue";
   }
 }

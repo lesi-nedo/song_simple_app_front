@@ -1,9 +1,9 @@
 
 <router-outlet></router-outlet>
 
-<a routerLink="/new" class="menu addS effectMen">Add Song</a>
-<a routerLink="/songs" class="menu showAll effectMen">Show All</a>
-<a routerLink="/edit" class="menu upd effectMen">Update</a>
-<a routerLink="/edit" class="menu del effectMen">Delete</a>
+<a routerLink="/new" #paramter1 (click)="onClick(paramter1, [paramter2, paramter3, paramter4])" class="menu addS effectMen">Add Song</a>
+<a routerLink="/songs" #paramter2 (click)="onClick(paramter2, [paramter1, paramter3, paramter4])" class="menu showAll effectMen">Show All</a>
+<a routerLink="/edit" #paramter3  (click)="onClick(paramter3,[paramter2, paramter1, paramter4] )" class="menu upd effectMen">Update</a>
+<a routerLink="/edit" #paramter4 (click)="onClick(paramter4, [paramter2, paramter3, paramter1])" class="menu del effectMen">Delete</a>
 
 

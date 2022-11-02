@@ -19,6 +19,7 @@ import { AddUpdateComponent } from './add-update/add-update.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SearchComponent } from './search/search.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 export function loadConfig(http: HttpClient, config: ConfigService): (() => Promise<boolean>) {
   return (): Promise<boolean> => {
@@ -54,7 +55,8 @@ export function loadConfig(http: HttpClient, config: ConfigService): (() => Prom
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [
     DatePipe,

@@ -4,7 +4,11 @@ label {
   font-size: 1.2rem;
   margin-top: 1rem;
   margin-bottom: .5rem;
-  margin-right: 1em;
+
+}
+
+#search-component{
+  margin-left: 30%!important;
 }
 
 input {
